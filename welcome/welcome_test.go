@@ -2,15 +2,15 @@ package welcome
 
 import (
 	"testing"
+	"pcne/assistant"
 )
+
 
 func TestWelcome(t *testing.T)  {
 	got := Welcome("Engie")
 	want := "Welcome, Engie!"
 
-	if got != want {
-		t.Errorf("got: %q want: %q", got, want)  
-	}
+	assistant.AssertCorrect(t, got, want)
 }
 
 func TestDescribeExam(t *testing.T) {
@@ -26,8 +26,5 @@ func TestDescribeExam(t *testing.T) {
 	"Finally, it will show you your score in each objective, and " +
 	"Let you know which objectives to focus on more with documentation links."
 
-	if got != want {
-		t.Errorf("got: %q, want: %q", got, want)
-	}
-
+	assistant.AssertCorrect(t, got, want)
 }
