@@ -17,7 +17,7 @@ func TestDescribeExam(t *testing.T) {
 	got := DescribeExam()
 	want := "The PCNE (Professional Cloud Network Engineer) exam by Google is " +
 	"a tough one. It is 2 hours of 50 to 60 multi-choice and multi-select questions. " +
-	"The passing score is 85%, so not much room for mistakes, careful! " +
+	"The passing score is 70%, so not much room for mistakes, careful! " +
 	"It needs good concentration, practice, food and sleep! " +
 	"In addition to the Google Skills Boost program offered to partners, " +
 	"you may need to review documentation associated with each exam objective. " +
